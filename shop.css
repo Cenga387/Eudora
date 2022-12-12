@@ -1,0 +1,116 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+.header{
+    height: 100%;
+    width: 100%;
+}
+#myVideo {
+    position: fixed;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -2;
+  }
+  
+.header .navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    padding:20px;
+    position: fixed;
+    transition: top 0.5s;
+    background-color: rgb(18, 0, 98);
+    box-shadow: 0 0 20px 0 rgb(124, 0, 0);
+    height: 45px;
+    z-index: 3;
+}
+.shop{
+    padding-top: 10%;
+    align-self: center;
+    text-align: center;
+}
+h1{
+    font-size: 38px;
+    color: white;
+    margin: 5% 0;
+}
+.shop .shop-items{
+    width: 80%;
+    margin: 30px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.item{
+    background-color: rgba(225, 225, 225, 0.56);
+    margin: 0 15px;
+    border: 1px solid black;
+    border-radius: 15px 0 15px;
+    height: 90%;
+    width: 60%;
+    transition: all ease 0.7s;
+    
+}
+.item:hover{
+    box-shadow: 3px 4px 8px 4px rgb(0, 76, 255);
+    transform: translateZ(15px);
+    height: 100%;
+    width: 65%;
+    cursor: pointer;
+    background-color: rgb(225, 225, 225);
+}
+.item-info{
+    height: 80%;
+    padding: 10px;
+    margin: auto;
+}
+.item-image{
+    height: 100px;
+    margin: 20px 10px;
+    background-image: url(./Slike/switch.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    box-shadow: 2px 2px rgb(18, 0, 98, 0.5);
+}
+.item-info h3{
+    padding: 10% 5%;
+    font-size: 25px;
+}
+.logo h1{
+    font-size: 42px;
+    color: rgb(38, 0, 255);
+}
+.logo span{
+    color: rgb(124, 0, 0);
+}
+.menu{
+    align-items: center;
+}
+.menu ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 30px;
+}
+.menu ul li{
+    list-style-type: none;
+    padding: 0px 20px;
+    font-size: 25px;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    transition: all 0.7s;
+}
+.menu ul li a:hover{
+    font-size: 27px;
+}
